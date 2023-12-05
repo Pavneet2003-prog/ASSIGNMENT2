@@ -1,0 +1,32 @@
+<div class="author">
+  <h1 class="author__heading">Hi, I am Raddy.</h1>
+  <p class="author__body">Web developer and content creator.</p>
+</div>
+
+<img src="/images/pic_1.jpg" alt="person looking out through window" class="hero-image" width="981" height="528">
+
+<section class="articles">
+  <h2 class="articles__heading">Latest Posts</h2>
+
+<ul class="article-ul">
+  {{#each data}}
+        <li>
+          <a href="/post/{{ _id }}">
+            <span>{{ title }}</span>
+            <span class="article-list__date">{{ formattedCreatedAt }}</span>
+          </a>
+        </li>
+      {{/each}}
+</ul>
+
+
+
+
+  
+ 
+
+  
+
+
+
+</section>
